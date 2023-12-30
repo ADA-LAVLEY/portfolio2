@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+/* header {
+    background-color: blueviolet;
+} */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+.link a {
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+/* i {
+    background-color: rgba(128, 128, 128, 0.598);
+    border-radius: 30px;
+    padding: 4px;
+    color: lightslategray;
+    margin-left: 10px;
+} */
+
+
+i {
+    font-size: 20px;
+    color: firebrick;
+    transition: 1s; 
+}
+i:hover {
+    transform: rotateY(180deg);
+    transition: 1s;    
+}
+
+/* main qismi */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+    height: 150vh;
+}
+
+.bir {
+    background-color: crimson;
+}
+.ikki {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 10px;
+}
+.grid {
+    background-color: chocolate;
+}
+/* ADA_LAVLEY */
+
+#icon {
+    display: none;
+}
+
+.btn {
+    display: none;
+}
+
+
+@media(max-width:768px) {
+  .uz {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.ikki {
+    grid-template-columns: 3fr 3fr;
+
+}
+#icon {
+    display: block;
+}
+.right {
+    display: flex;
+}
+.btn {
+    display: block;
+}
+select  {
+    margin: 0 20px;
+}
+
+}
+@media(max-width:320px){
+    main {
+       grid-template-columns: none;
+    }
+    .bir {
+        display: none;
+    }
+    .ikki {
+        grid-template-columns: 3fr;
+        height: 200vh;
+    
+    }
+}
